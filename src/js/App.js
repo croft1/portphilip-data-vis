@@ -30,7 +30,7 @@ class App extends Component {
             currentLayerName: Str_en.NAME_BUILDINGS,
             data: [],
             mapStyle: RetroStyle,
-            mapItemColor: "RoyalBlue",
+            mapItemColor: "Navy",
             dataRestricted: {
                 is: false,
                 limit: DATA_COUNT_LIMIT,

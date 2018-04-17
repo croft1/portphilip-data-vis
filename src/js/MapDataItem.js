@@ -159,6 +159,7 @@ class MapDataItem extends Component {
         for (var i = 0; i < coordinates.length; i++) {
 
             if(coordinates.length === 1){
+                //there is surely a way to get this to work with getLIne().  ugh
                 var poly = coordinates[i];
                 for (var j = 0; j < poly.length; j++) {
                     lines.push(
