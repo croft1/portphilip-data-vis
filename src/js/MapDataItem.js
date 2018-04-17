@@ -11,16 +11,18 @@ class MapDataItem extends Component {
         super(props);
         this.state = {
             windowOpen: false,
+            id: this.props.itemID,
         };
         this.handleToggleWindow.bind(this);
     }
 
     componentDidMount() {
-
+        this.setState({id: this.props.itemID},() => {
+            console.log(this.state.id)
+        })
     }
 
     render() {
-        console.log(this.props.mkr);
         return this.genItemForData(this.props.mkr);
     }
 
@@ -31,7 +33,7 @@ class MapDataItem extends Component {
             },
             () => {
                 if (this.state.windowOpen === true) {
-                    this.props.mapCallback(this.props.itemID);
+                    this.props.mapCallback(this.state.id);
                 }
                 else {
                     this.props.mapCallback(null);
@@ -79,7 +81,7 @@ class MapDataItem extends Component {
             >
                 {this.state.windowOpen &&
                 <InfoWindow
-                    onCloseClick={() => this.handleToggleWindow()}
+                    onCloseClick={() => this.handleToggleWindow(this.props.itemID)}
                     zIndex={1}
                     defaultZIndex={1}
                     position={this.getPosition(mkr.geometry.coordinates)}
@@ -173,7 +175,6 @@ class MapDataItem extends Component {
                 );
                 return lines[0];
             }
-            console.log(lines)
         }
     }
 

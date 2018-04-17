@@ -45,8 +45,20 @@ export default class DialogBox extends React.Component{
                 >
                     {/*make this more reusable and pass in a prop with this info*/}
                 <p>data.gov.au</p>
-                <a href={Str_en.HOMEPAGE_BUILDINGS}>{Str_en.NAME_BUILDINGS}</a>
-                    <br/>
+                <a href={Str_en.HOMEPAGE_BUILDINGS}>{Str_en.NAME_BUILDINGS}</a><br/>
+                <a href={Str_en.HOMEPAGE_GARBAGE}>{Str_en.NAME_GARBAGE}</a><br/>
+                <a href={Str_en.HOMEPAGE_TREES}>{Str_en.NAME_TREES}</a><br/>
+                <a href={Str_en.HOMEPAGE_ACCESS_PARKING}>{Str_en.NAME_ACCESS_PARKING}</a><br/>
+                <a href={Str_en.HOMEPAGE_BUS_ROUTES}>{Str_en.NAME_BUS_ROUTES}</a><br/>
+                <a href={Str_en.HOMEPAGE_BUS_STOPS}>{Str_en.NAME_BUS_STOPS}</a><br/>
+                <a href={Str_en.HOMEPAGE_CAR_SHARE}>{Str_en.NAME_CAR_SHARE}</a><br/>
+                <a href={Str_en.HOMEPAGE_DOG_WALKING}>{Str_en.NAME_DOG_WALKING}</a><br/>
+                <a href={Str_en.HOMEPAGE_COMMUNITY_GARDENS}>{Str_en.NAME_COMMUNITY_GARDENS}</a><br/>
+                <a href={Str_en.HOMEPAGE_MATERNAL}>{Str_en.NAME_MATERNAL}</a><br/>
+                <a href={Str_en.HOMEPAGE_SYRINGE}>{Str_en.NAME_SYRINGE}</a><br/>
+                <a href={Str_en.HOMEPAGE_SWEEPING}>{Str_en.NAME_SWEEPING}</a><br/>
+                <a href={Str_en.HOMEPAGE_PARKING_MACHINES}>{Str_en.NAME_PARKING_MACHINES}</a><br/>
+                <a href={Str_en.HOMEPAGE_IMMUNISATION}>{Str_en.NAME_IMMUNISATION}</a><br/>
 
                 </Dialog>
             </div>

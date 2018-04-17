@@ -22,7 +22,8 @@ class Map extends Component {
     }
 
     mapCallback = (key) => {
-        if(this.state.oldMapDataItemID !== null){
+        console.log(key + " -- old " + this.state.oldMapDataItemID)
+        if(this.state.oldMapDataItemID !== null && this.state.oldMapDataItemID !== undefined){
             this.refs[this.state.oldMapDataItemID].hideWindow();
         }
 
@@ -39,7 +40,6 @@ class Map extends Component {
     }
 
     render() {
-        // console.log(this.props.mkrs[0]);
         return (
             <div className='map'>
                 <GoogleMap
@@ -63,9 +63,9 @@ class Map extends Component {
                             isLayerShown
                             isMarkerShown
                             mkr={mkr}
-                            key={mkr.properties.BuildingID + mkr.properties.Table_Row_ID}
-                            ref={mkr.properties.BuildingID + mkr.properties.Table_Row_ID}
-                            itemID={mkr.properties.BuildingID + mkr.properties.Table_Row_ID}
+                            key={mkr.properties.Table_Row_ID}
+                            ref={mkr.properties.Table_Row_ID}
+                            itemID={mkr.properties.Table_Row_ID}
                             mapCallback={this.mapCallback}
                             layer={this.props.layerName}
                             styleColor={this.props.mapItemColor}

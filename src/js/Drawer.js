@@ -56,7 +56,7 @@ export default class DrawerUndocked extends React.Component{
                 />
                 <Drawer
                     docked={false}
-                        width={200}
+                        width={330}
                         open={this.state.open}
                         onRequestChange={(open) => this.setState({open})}>
                     <MenuItem href={'https://www.portphilip.vic.gov.au'} onClick={this.handleClose}>
@@ -69,7 +69,58 @@ export default class DrawerUndocked extends React.Component{
                         this.handleItemClick.bind(
                             this, Str_en.NAME_BUILDINGS, Str_en.REST_BUILDINGS)}
                               primaryText={Str_en.NAME_BUILDINGS}  />
-
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_GARBAGE, Str_en.REST_GARBAGE)}
+                              primaryText={Str_en.NAME_GARBAGE}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_TREES, Str_en.REST_TREES)}
+                              primaryText={Str_en.NAME_TREES}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_ACCESS_PARKING, Str_en.REST_ACCESS_PARKING)}
+                              primaryText={Str_en.NAME_ACCESS_PARKING}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_BUS_ROUTES, Str_en.REST_BUS_ROUTES)}
+                              primaryText={Str_en.NAME_BUS_ROUTES}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_BUS_STOPS, Str_en.REST_BUS_STOPS)}
+                              primaryText={Str_en.NAME_BUS_STOPS}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_CAR_SHARE, Str_en.REST_CAR_SHARE)}
+                              primaryText={Str_en.NAME_CAR_SHARE}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_DOG_WALKING, Str_en.REST_DOG_WALKING)}
+                              primaryText={Str_en.NAME_DOG_WALKING}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_COMMUNITY_GARDENS, Str_en.REST_COMMUNITY_GARDENS)}
+                              primaryText={Str_en.NAME_COMMUNITY_GARDENS}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_MATERNAL, Str_en.REST_MATERNAL)}
+                              primaryText={Str_en.NAME_MATERNAL}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_SYRINGE, Str_en.REST_SYRINGE)}
+                              primaryText={Str_en.NAME_SYRINGE}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_SWEEPING, Str_en.REST_SWEEPING)}
+                              primaryText={Str_en.NAME_SWEEPING}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_PARKING_MACHINES, Str_en.REST_PARKING_MACHINES)}
+                              primaryText={Str_en.NAME_PARKING_MACHINES}  />
+                    <MenuItem leftIcon={<MapLayerIcon/>} onClick={
+                        this.handleItemClick.bind(
+                            this, Str_en.NAME_IMMUNISATION, Str_en.REST_IMMUNISATION)}
+                              primaryText={Str_en.NAME_IMMUNISATION}  />
                     <Divider />
                     <Subheader>New Features</Subheader>
                     <MenuItemSnackbar leftIcon={<MapLayerErrorIcon/>} onClick={this.handleClose} text={"Link New Set"} message={Str_en.COMING_SOON} />

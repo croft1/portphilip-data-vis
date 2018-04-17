@@ -19,7 +19,7 @@ import StdStyle from '../map_styles/STD_CUSTOM_STYLE';
 
 import StyleIcon from 'material-ui/svg-icons/image/style';
 
-const DATA_COUNT_LIMIT = 5000; //will die at 15000 points
+const DATA_COUNT_LIMIT = 2000; //very tempermental depending onthe dataset. easy to kill it with this
 
 class App extends Component {
 

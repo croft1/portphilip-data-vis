@@ -95,11 +95,15 @@ header .b-center{
 .drawer_logo{
     height: 160px;
     width: 160px;
+    padding: 5px
 }
 
 .appbar-logo{
     height: 30px;
     width: 30px;
+
 }
+
+
 
 
